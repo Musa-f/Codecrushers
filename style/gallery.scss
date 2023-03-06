@@ -19,7 +19,10 @@ nav{
         height: 250px;
         img{
             position: relative;
-        }
+            &:hover{
+                scale: 0.8;
+            }
+        } 
     }
     div:nth-child(1){
         background-color: aqua;
@@ -28,7 +31,7 @@ nav{
         grid-row-start: 1;
         grid-row-end: 3;
         height: 500px;
-        width: 800px;
+
     }
     div:nth-child(2){
         background-color: red;
@@ -72,3 +75,14 @@ nav{
     }
 }
 
+
+@media (max-width: 900px){
+    .gallery{
+        padding-top: 15%;
+    }
+}
+@media (max-width: 600px){
+    .gallery{
+        padding-top: 20%;
+    }
+}

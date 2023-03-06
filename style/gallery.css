@@ -21,6 +21,9 @@ nav {
 .gallery div img {
   position: relative;
 }
+.gallery div img:hover {
+  scale: 0.8;
+}
 .gallery div:nth-child(1) {
   background-color: aqua;
   grid-column-start: 1;
@@ -28,7 +31,6 @@ nav {
   grid-row-start: 1;
   grid-row-end: 3;
   height: 500px;
-  width: 800px;
 }
 .gallery div:nth-child(2) {
   background-color: red;
@@ -69,4 +71,15 @@ nav {
 }
 .gallery div:nth-child(11) {
   background-color: peru;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    padding-top: 15%;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    padding-top: 20%;
+  }
 }/*# sourceMappingURL=gallery.css.map */
