@@ -368,4 +368,7 @@ footer ul {
   margin-top: 2%;
   text-align: center;
   list-style-type: none;
+}
+footer ul a {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
