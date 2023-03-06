@@ -34,16 +34,13 @@ header nav {
   align-items: center;
   padding: 0 2%;
 }
-
 header nav div {
   display: flex;
   align-items: center;
 }
-
 header nav div img {
   width: 90px;
 }
-
 header nav div h1 {
   font-size: 2.4em;
   color: var(--sub-color);
@@ -57,19 +54,16 @@ header nav ul {
   display: flex;
   justify-content: flex-end;
 }
-
 header nav ul li {
   position: relative;
   font-size: 1.2em;
   font-weight: 800;
   padding: 0 2%;
 }
-
 header nav ul li a {
   color: var(--main-color);
   text-decoration: none;
 }
-
 header nav ul li::after {
   content: "";
   position: absolute;
@@ -81,58 +75,8 @@ header nav ul li::after {
   transform: scaleX(0);
   transition: transform 0.35s;
 }
-
 header nav ul li:hover::after {
   transform: scaleX(1);
-}
-
-#main {
-  height: calc(300vh - 200px);
-}
-
-#main section {
-  width: 100vw;
-  padding-top: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-#main section:nth-child(1) article {
-  top: 20vh;
-  height: 40vh;
-}
-
-#main section:nth-child(2) article {
-  top: 10vh;
-  height: 60vh;
-}
-
-#main section:nth-child(3) article {
-  height: 40vh;
-}
-
-#main section article {
-  position: relative;
-  z-index: 10;
-  width: 70vw;
-  color: whitesmoke;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr 1fr;
-}
-
-#main section article h3 {
-  grid-row: 1;
-  grid-column: 2;
-  width: 100%;
-  text-align: left;
-  align-self: center;
-}
-
-#main section article p {
-  grid-row: 2;
-  grid-column: 2;
-  align-self: center;
 }
 
 #main section:nth-child(1) {
@@ -143,7 +87,6 @@ header nav ul li:hover::after {
   background-position: center top;
   background-attachment: fixed;
 }
-
 #main section:nth-child(1)::after {
   content: "";
   z-index: 5;
@@ -154,7 +97,6 @@ header nav ul li:hover::after {
   width: 100vw;
   height: 60vh;
 }
-
 #main section:nth-child(2) {
   height: 100vh;
   background: var(--main-color);
@@ -163,7 +105,6 @@ header nav ul li:hover::after {
   background-position: center top;
   background-attachment: fixed;
 }
-
 #main section:nth-child(3) {
   height: calc(100vh - 180px);
   background: url("./img/pexels-cottonbro-studio-3993293.jpg");
@@ -172,7 +113,6 @@ header nav ul li:hover::after {
   background-position: center top;
   background-attachment: fixed;
 }
-
 #main section:nth-child(3)::after {
   content: "";
   position: absolute;
@@ -184,6 +124,48 @@ header nav ul li:hover::after {
   height: 60vh;
 }
 
+#main {
+  height: calc(300vh - 200px);
+}
+#main section {
+  width: 100vw;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+#main section:nth-child(1) article {
+  top: 20vh;
+  height: 40vh;
+}
+#main section:nth-child(2) article {
+  top: 10vh;
+  height: 60vh;
+}
+#main section:nth-child(3) article {
+  height: 40vh;
+}
+#main section article {
+  position: relative;
+  z-index: 10;
+  width: 70vw;
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+}
+#main section article h3 {
+  grid-row: 1;
+  grid-column: 2;
+  width: 100%;
+  text-align: left;
+  align-self: center;
+}
+#main section article p {
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -193,16 +175,14 @@ footer {
   color: white;
   background: linear-gradient(to top, var(--sub-color-2), var(--sub-color-3));
 }
-
 footer hr {
   width: 40%;
   height: 3px;
   background-color: whitesmoke;
   border: none;
 }
-
 footer ul {
   margin-top: 2%;
   text-align: center;
   list-style-type: none;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
