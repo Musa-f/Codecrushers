@@ -45,7 +45,7 @@
                 <div id="barre-droite"></div>
                 <ul>
                     <li>Adresse : <br> 9 Rue François Mousis <br> 65000 Tarbes</li> <br>
-                    <li>Coordonnées : <br> 0508965471</li> <br>
+                    <li>Coordonnées : <br> 05.08.96.54.71</li> <br>
                     <li>Horaires : <br> 10h-20h</li>
                 </ul>
 
