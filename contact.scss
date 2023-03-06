@@ -1,0 +1,84 @@
+//-----------------Contact-------------------
+#contact {
+    padding: 60px 0 0 0;
+    display: flex;
+    height: calc(100vh - 240px);
+    top: var(--navbar-height);
+    justify-content: center;
+  }
+
+#contact-div1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px var(--main-color);
+    z-index: 0;
+    position: relative;
+    margin: 5vh 0 0 5vw;
+    border: solid 2px var(--sub-color);
+    height: 25vw;
+    width: 40vw;
+    background-color: white;
+    font-size: 1.5vw;
+    
+  }
+  #contact-div1 form{
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  #contact-div1 form button{
+    width: 60%;
+    height: 2vw;
+    font-size: 1vw;
+  }
+  #contact-div1 h2{
+    text-align: center;
+  }
+  
+  #contact-div2 {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    margin: 20vh 0 0 -10vw;
+    border: solid 2px var(--sub-color);
+    height: 25vw;
+    width: 30vw;
+    background-color: white;
+    font-size: 1.5vw;
+    text-align: center;
+  }
+  #contact-div2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+#barre-gauche {
+    background-color: var(--main-color);
+    margin-left: -5px;
+    width: 65%;
+    height: 5px;
+  }
+  #barre-droite {
+    background-color: var(--main-color);
+    width: 75%;
+    height: 5px;
+    margin-left: 26%;
+  }
+
+#contact-div1 input, #contact-div1 textarea{
+    height: 1.5vw;
+    width: 60%;
+}
+
+#contact-div1 textarea{
+    height: 10vw;
+}
