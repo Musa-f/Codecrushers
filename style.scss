@@ -1,0 +1,106 @@
+:root{
+    --navbar-height: 60px;
+    --main-color: #100f0f;
+    --main-color-2: #100f0fcd;
+    --main-color-3: #100f0f00;
+    --sub-color: #c3a984;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-color);
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    position: fixed;
+    width: calc(100vw - 4%);
+    height: var(--navbar-height);
+    background-color: #100f0f6b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+
+    div{
+        display: flex;
+        align-items: center;
+        img{
+            width: 90px;
+        }
+        h1{
+            font-size: 2.4em;
+            color: var(--sub-color);
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+        }
+    }
+
+    ul{
+        width: 50%;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+            font-size: 1.2em;
+            font-weight: 800;
+            padding: 0 2%;
+            a{
+                color: var(--main-color);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-img{
+    width: 100vw;
+    height: 80vh;
+    background: url("./img/img-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% top;
+}
+
+.header-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(to top, 
+                var(--main-color),
+                var(--main-color-2),
+                var(--main-color-3)
+                );
+    transform: translateY(calc(80vh - 100%));
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    color: white;
+
+    hr{
+        width: 40%;
+    }
+
+    ul{
+        margin-top: 2%;
+        text-align: center;
+        list-style-type: none;
+    }
+}
