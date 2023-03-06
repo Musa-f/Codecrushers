@@ -1,35 +1,105 @@
+<?php
+
+require("form_Envoi.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>Document</title>
+        <link rel="stylesheet" href="./style/contact.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="contact.css">
 
     </head>
 
     <body>
         
+    <header>
         <nav>
             <div>
-                <img src="" alt="">
+                <img src="img/logo.png" alt="">
                 <h1>Coiff'Hommes</h1>
             </div>
-
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="">Forfaits</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="index.html#section-one">Accueil</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="index.html#section-two">A propos</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="index.html#section-three">Forfaits</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="gallery.html">Galerie</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="contact.php">Contact</a>
+                    <span></span>
+                </li>
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                </a>
             </ul>
         </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <div id="backBurg">
+            
+        </div>
+    <a id="closeBtn" href="#" class="close">×</a>
+    <ul>
+    <li>
+        <a href="index.html#section-one">Accueil</a>
+        <hr>
+        <span></span>
+    </li>
+    <li>
+        <a href="index.html#section-two">A propos</a>
+        <hr>
+        <span></span>
+    </li>
+    <li>
+        <a href="index.html#section-three">Forfaits</a>
+        <hr>
+        <span></span>
+    </li>
+    <li>
+        <a href="gallery.html">Galerie</a>
+        <hr>
+        <span></span>
+    </li>
+    <li>
+        <a href="contact.php">Contact</a>
+        <hr>
+        <span></span>
+    </li>
+
+    </ul>
+  </div>
+
 
         <section id="contact">
             <div id="contact-div1">
                 <h2>Contact</h2>
                 <div id="barre-gauche"></div>
+                <?php if(isset($errors)) {
+                    $error = implode("",$errors);
+                    echo "<p id='errorMessage'>$error</p>";
+                }
+                ?>
                 <form action="" method="post">
                     <label for="nom">Nom</label>
                     <input type="text" name="nom" id="nom"> 
@@ -37,20 +107,8 @@
                     <input type="text" name="mail" id="mail"> 
                     <label for="message">Message</label> 
                     <textarea name="message" id="message" cols="50" rows="10"></textarea> 
-                    <button type="submit">Envoyer</button>
+                    <button type="submit" name="submit">Envoyer</button>
                 </form>
-            </div>
-            <div id="contact-div2">
-                <h2>Coordonnées</h2>
-                <div id="barre-droite"></div>
-                <ul>
-                    <li>Adresse : <br> 9 Rue François Mousis <br> 65000 Tarbes</li> <br>
-                    <li>Coordonnées : <br> 05.08.96.54.71</li> <br>
-                    <li>Horaires : <br> 10h-20h</li>
-                </ul>
-
-
-
             </div>
         </section>
 
@@ -68,4 +126,5 @@
         </footer>
 
     </body>
+    <script src="contact.js"></script>
 </html>
