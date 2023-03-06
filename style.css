@@ -106,7 +106,7 @@ header nav ul li:hover::after {
   background-attachment: fixed;
 }
 #main section:nth-child(3) {
-  height: calc(100vh - 180px);
+  height: calc(115vh - 180px);
   background: url("./img/pexels-gonzalo-guzman-3654937.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ header nav ul li:hover::after {
 }
 
 #main {
-  height: calc(300vh - 200px);
+  height: calc(315vh - 200px);
 }
 #main section {
   width: 100vw;
