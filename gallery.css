@@ -1,0 +1,72 @@
+nav {
+  background-color: azure;
+}
+
+.gallery {
+  color: white;
+  padding: 10% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr, 6);
+  gap: 20px;
+}
+.gallery div {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  border: 1px solid white;
+  overflow: hidden;
+  height: 250px;
+}
+.gallery div img {
+  position: relative;
+}
+.gallery div:nth-child(1) {
+  background-color: aqua;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 500px;
+  width: 800px;
+}
+.gallery div:nth-child(2) {
+  background-color: red;
+  height: 230px;
+}
+.gallery div:nth-child(3) {
+  background-color: pink;
+}
+.gallery div:nth-child(4) {
+  background-color: green;
+  grid-row: 3;
+}
+.gallery div:nth-child(5) {
+  background-color: blueviolet;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.gallery div:nth-child(6) {
+  background-color: yellow;
+}
+.gallery div:nth-child(7) {
+  background-color: yellowgreen;
+}
+.gallery div:nth-child(8) {
+  background-color: brown;
+}
+.gallery div:nth-child(9) {
+  background-color: rosybrown;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.gallery div:nth-child(10) {
+  background-color: hotpink;
+  height: 520px;
+  grid-column: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.gallery div:nth-child(11) {
+  background-color: peru;
+}/*# sourceMappingURL=gallery.css.map */
