@@ -95,12 +95,12 @@ require("form_Envoi.php");
             <div id="contact-div1">
                 <h2>Contact</h2>
                 <div id="barre-gauche"></div>
-                <?php if(isset($errors)) {
-                    $error = implode("",$errors);
-                    echo "<p id='errorMessage'>$error</p>";
-                }
-                ?>
                 <form action="" method="post">
+                    <?php if(isset($errors)) {
+                        $error = implode("",$errors);
+                        echo "<p id='errorMessage'>$error</p>";
+                    }
+                    ?> <br>
                     <label for="nom">Nom</label>
                     <input type="text" name="nom" id="nom"> 
                     <label for="mail">Mail</label> 
