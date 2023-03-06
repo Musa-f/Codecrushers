@@ -1,4 +1,7 @@
 const header = document.getElementsByTagName('nav')[0];
+const articles = document.getElementsByTagName('article');
+
+
 let previousScroll = 0;
 
 //linear-gradient(to right, var(--main-color), whitesmoke)
@@ -29,5 +32,12 @@ window.addEventListener('scroll', function () {
     } else {
         header.style.boxShadow = "0px 4px 8px 0px var(--sub-color)";//rgb(100, 100, 100)";
     }
+
+    if (scrolling > 300) {
+        articles[1].classList.add('scrolled');
+    } else {
+        articles[1].classList.remove('scrolled');
+    }
+
     previousScroll = scrolling;
 });
