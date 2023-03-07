@@ -23,6 +23,122 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+    body #main {// FORMAT DES SECTIONS SMARTPHONES    
+        section {
+            width: 100vw;
+            padding-top: 80px;
+            display: grid;
+            justify-content: center;
+    
+            article {
+                top:0%;
+                padding:10px;
+                
+                //h3 {}
+        
+                p {
+                    padding-left: 10px;
+                    font-size: clamp(.75rem, 1.25vw, 1.5rem);
+                    letter-spacing: .05rem;
+                }
+            }
+        }
+        
+        section:nth-child(1) {
+            grid-template-columns: .1fr 2fr .1fr;
+            grid-template-rows: .25fr 2fr .25fr;
+    
+            article {
+                align-self: center;
+                clip-path: polygon(0% 0%,45px 0%,45px 100%,0% 100%);
+
+                i {
+                    top:5px;
+                    left:.65rem;
+                    font-size: 1.5rem;
+                    height:1.5rem;
+                    width: 1.5rem;
+                }
+    
+                h3 {
+                    position: absolute;
+                    top:1.25rem;
+                    left:.75rem;
+    
+                    font-size: clamp(1rem, 2vh, 2rem);
+                    letter-spacing: .15rem;
+                }
+        
+                p {
+                    padding-left: 40px;
+                    padding-top: 40px;
+                    font-size: clamp(1rem, 1.25vw, 1.5rem);
+                    letter-spacing: .05rem;
+                }
+            }
+        }
+    
+        section:nth-child(2) {
+            grid-template-columns: .1fr 2fr .1fr;
+            grid-template-rows: .1fr 1.9fr 1.9fr .1fr;
+    
+            article {
+                grid-row:3;
+                grid-column:2;
+                top:0px;
+                align-self: center;
+                //transform: translateX(-300vw);
+    
+                &.scrolled {
+                    animation: scrolledLeft 1.5s ease-out forwards;
+                }
+    
+                &.scrolled ~ .images-two .image-two.top {
+                    animation: scrolledRight 1.5s ease-out forwards;
+                }
+    
+                &.scrolled ~ .images-two .image-two.bottom {
+                    animation: scrolledRight .75s ease-out forwards;
+                }
+            }
+    
+            .images-two {
+                grid-row:2;
+                grid-column: 2;
+                top:0;
+                height: 47.5vh;
+                justify-self: center;
+                width:fit-content;
+                //background-color: red;
+            }
+    
+            .image-two.top {
+                position: relative;
+                top:7.5vh;
+                left:5vh;
+                width: 40vh;
+            }
+    
+            .image-two.bottom {
+                position: relative;
+                top:-42.5vh;
+                left:-5vh;
+                width: 30vh;
+            }
+        }
+    
+        section:nth-child(3) {
+            grid-template-columns: .25fr 2fr 1fr .25fr;
+    
+            article {
+                min-width: 30vh;
+                width:30vw;
+            }
+        }
+    }
+}
+
 header nav {// NAV (GAUCHE)
     position: fixed;
     z-index: 999;
@@ -98,22 +214,22 @@ header nav {// NAV (DROITE)
     background-position: center top;
     background-attachment: fixed;
 
-    &::after {
-        content: "";
-        z-index: 5;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(to bottom, var(--main-color-3), var(--main-color-2));
-        width: 100vw;
-        height: 30vh;
-        }
+    // &::after {
+    //     content: "";
+    //     z-index: 5;
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     background: linear-gradient(to bottom, var(--main-color-3), var(--main-color-2));
+    //     width: 100vw;
+    //     height: 30vh;
+    //     }
     }
 
     section:nth-child(2) {
         height: 100vh;
         background-image:
-            linear-gradient(var(--main-color-2), var(--main-color-2)), 
+            // linear-gradient(var(--main-color-2), var(--main-color-2)), 
             url("./img/pexels-cottonbro-studio-3993293.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -129,16 +245,16 @@ header nav {// NAV (DROITE)
         background-position: center top;
         background-attachment: fixed;
 
-    &::after {
-        content: "";
-        position: absolute;
-        z-index: 5;
-        top: calc(200vh + 80px);
-        left: 0;
-        background: linear-gradient(to top, var(--main-color-3), var(--main-color-2));
-        width: 100vw;
-        height: 30vh;
-        }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     z-index: 5;
+    //     top: calc(200vh + 80px);
+    //     left: 0;
+    //     background: linear-gradient(to top, var(--main-color-3), var(--main-color-2));
+    //     width: 100vw;
+    //     height: 30vh;
+    //     }
     }
 }
 
@@ -153,8 +269,7 @@ header nav {// NAV (DROITE)
 
         article {
             position: relative;
-            border-radius: 10px;
-            border:2px solid var(--sub-color);
+            border:1px solid var(--sub-color);
             z-index: 10;
             width: fit-content;
             height:fit-content;
@@ -277,6 +392,11 @@ header nav {// NAV (DROITE)
             height: 100%;
             width:100%;
             border-color: red;
+
+            * {
+                box-sizing: border-box;
+                border:1px solid var(--sub-color);
+            }
         }
 
         .image-two.top {
