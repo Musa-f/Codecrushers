@@ -1,6 +1,7 @@
+const space = ' ';
 const header = document.getElementsByTagName('nav')[0];
 const articles = document.getElementsByTagName('article');
-
+const racine = document.documentElement;
 
 let previousScroll = 0;
 
@@ -8,7 +9,8 @@ let previousScroll = 0;
 
 window.addEventListener('scroll', function () {
     let scrolling = window.pageYOffset;
-    console.log(scrolling);
+    //console.log('scroll :' + space + scrolling);
+    console.log('Width :' + space + racine.clientWidth);
 
     if (scrolling === 0) {
         header.classList.remove('scrolled');
@@ -41,3 +43,4 @@ window.addEventListener('scroll', function () {
 
     previousScroll = scrolling;
 });
+

@@ -7,6 +7,8 @@
         <title>Galerie</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./style/gallery.css">
+        <link rel="stylesheet" href="./style/menu_burger.css">
+
     </head>
 
     <body>
@@ -19,15 +21,15 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#section-one">Accueil</a>
+                        <a href="index.html#section-one">Accueil</a>
                         <span></span>
                     </li>
                     <li>
-                        <a href="#section-two">A propos</a>
+                        <a href="index.html#section-two">A propos</a>
                         <span></span>
                     </li>
                     <li>
-                        <a href="#section-three">Forfaits</a>
+                        <a href="index.html#section-three">Forfaits</a>
                         <span></span>
                     </li>
                     <li>
@@ -38,9 +40,51 @@
                         <a href="contact.php">Contact</a>
                         <span></span>
                     </li>
+                    <a href="#" id="openBtn">
+                        <span class="burger-icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                    </a>
+    
                 </ul>
             </nav>
         </header>
+
+        <div id="mySidenav" class="sidenav">
+            <div id="backBurg">
+                
+            </div>
+        <ul>
+        <li>
+            <a href="index.html#section-one">Accueil</a>
+            <hr>
+            <span></span>
+        </li>
+        <li>
+            <a href="index.html#section-two">A propos</a>
+            <hr>
+            <span></span>
+        </li>
+        <li>
+            <a href="index.html#section-three">Forfaits</a>
+            <hr>
+            <span></span>
+        </li>
+        <li>
+            <a href="gallery.html">Galerie</a>
+            <hr>
+            <span></span>
+        </li>
+        <li>
+            <a href="contact.php">Contact</a>
+            <hr>
+            <span></span>
+        </li>
+    
+        </ul>
+      </div>
 
         <section class="gallery">
             <div><img src="./img/pexels-mídia-897253.jpg" alt=""></div>
@@ -71,4 +115,5 @@
         </footer>
 
     </body>
+    <script src="contact.js"></script>
 </html>
