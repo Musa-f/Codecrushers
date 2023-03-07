@@ -12,13 +12,15 @@ require("form_Envoi.php");
         <title>Document</title>
         <link rel="stylesheet" href="./style/contact.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style/menu_burger.css">
+
 
     </head>
 
     <body>
         
     <header>
-        <nav>
+        <nav class="contactNav">
             <div>
                 <img src="img/logo.png" alt="">
                 <h1>Coiff'Hommes</h1>
@@ -127,4 +129,5 @@ require("form_Envoi.php");
 
     </body>
     <script src="contact.js"></script>
+    <script src="script.js"></script>
 </html>

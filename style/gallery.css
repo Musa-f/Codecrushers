@@ -1,5 +1,5 @@
 nav {
-  background-color: azure;
+  background: linear-gradient(to right, var(--main-color) 20%, var(--sub-color));
 }
 
 .gallery {
@@ -60,5 +60,10 @@ nav {
 @media (max-width: 600px) {
   .gallery {
     padding-top: 20%;
+  }
+}
+@media (min-width: 1900px) {
+  div img:hover {
+    scale: 1.1 !important;
   }
 }/*# sourceMappingURL=gallery.css.map */
